@@ -1,0 +1,13 @@
+ version: "3.3"
+
+ services:
+   api-users:
+     build: ./api-users
+     image: leonelcd/api-users
+     ports:
+       - 8000:8000
+   websimple:
+     build: ./websimple
+     image: leonelcd/websimple
+     ports:
+       - 8080:80
